@@ -1,0 +1,30 @@
+body {
+   background-color: rgb(0, 0, 0);
+   color: floralwhite;
+   font-family: Arial, Helvetica, sans-serif;
+   padding: 2rem;
+}
+
+form {
+   border: solid thick white;
+   padding: 1rem;
+   margin: 1rem;
+}
+
+div, p {
+   margin-top: 1rem;
+}
+
+input{
+   padding-left:0.25rem;
+   padding-top: 0.25rem;
+}
+
+
+option:nth-child(even) {
+   background-color: #ccc;
+}
+
+option:nth-child(odd) {
+   background-color: #fff;
+}

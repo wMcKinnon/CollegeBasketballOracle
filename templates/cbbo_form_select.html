@@ -1,0 +1,36 @@
+{% extends "cbbo_layout.html" %}
+
+<!-- 
+   cbbo_layout defines three blocks
+   title, header, content
+-->
+
+{% block title %} {{title}}  {% endblock title %}
+{% block header %} {{header}}  {% endblock header %}
+
+{% block content %} 
+<form action="" method="post">
+   {{ form.csrf_token }}   
+   <div>
+      {{form.home_team.label}} <br />
+      {{form.home_team}}
+   </div>
+   <div>
+      {{form.away_team.label}} <br />
+      {{form.away_team}}
+   </div>
+   <div>
+      {{form.name.label}} <br />
+      {{form.name(size=30)}}
+   </div>
+  
+   <!-- 
+      The form uses Jinja but you will not see it 
+      if you look at the source code when the form 
+      is in the browser 
+    -->
+   <div>
+      {{form.submit()}}
+   </div>
+</form>
+{% endblock content %}
