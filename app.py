@@ -1,7 +1,3 @@
-
-
-
-
 from cbbo_form import CbboForm
 # note addition of request and redirect to list below
 from flask import Flask, render_template, url_for, request, redirect
@@ -13,6 +9,9 @@ app = Flask(__name__)
 # related needs by extensions or your application. It 
 # should be a long random string of bytes, although 
 # unicode is accepted too.
+# kenpom adjusted efficiency margin
+# ncaa net ranking
+# barttorvik barthag 
 app.config["SECRET_KEY"]='why_a_duck?'
 
 @app.route("/")
@@ -35,4 +34,4 @@ def college_basketball_oracle_form():
 
 # debugging depending on how app is invoked in VS Code
 if __name__ == "__main__":
-   app.run(debug=True)
+   app.run()
